@@ -65,4 +65,31 @@
         </definitions>
     </ESCP.Core.CharacterDef>
 
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Ator</defName>
+        <pawnKind>ESCP_Pawnkind_Redguard_Knight</pawnKind>
+        <faction>ESCP_Faction_Crowns</faction>
+        <eras>
+            <li>2</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Redguard</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>A'tor</firstName>
+                <lastName></lastName>
+                <nickname>the Prince</nickname>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 15)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>Goatee</beardDef>
+                <skinColorOverride>(90, 65, 48)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
 </Defs>
