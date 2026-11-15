@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_RedguardkindBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>ESCP_Faction_Crowns</defaultFactionDef>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ESCP_Xenotype_Redguard MayRequire="Ludeon.RimWorld.Biotech">1</ESCP_Xenotype_Redguard>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <maxGenerationAge>60</maxGenerationAge>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <invNutrition>2.7</invNutrition>
+        <invFoodDef>MealSurvivalPack</invFoodDef>
+        <disallowedTraits><li>Nudist</li></disallowedTraits>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+        <initialResistanceRange>5~10</initialResistanceRange>
+        <initialWillRange>1~3</initialWillRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Citizen</defName>
+        <label>Redguard citizen</label>
+        <combatPower>35</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>100</min>
+            <max>200</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Merchant</defName>
+        <label>Redguard merchant</label>
+        <combatPower>40</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                    <li>ESCP_Backstory_Redguard_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_DesertMerchant</def>
+            </li>
+        </forcedTraits>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>150</min>
+            <max>300</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Warrior</defName>
+        <label>Redguard warrior</label>
+        <combatPower>65</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_SwordSinger</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>150</min>
+            <max>400</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ArmoredMedieval</li>
+            <li>IndustrialMilitary</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>200</min>
+            <max>600</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Archer</defName>
+        <label>Redguard archer</label>
+        <combatPower>55</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Archer</li>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>140</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+            <li>Bow</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialMilitary</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>150</min>
+            <max>400</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Alikr</defName>
+        <label>Alik'r warrior</label>
+        <combatPower>90</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Ansei</li>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_SwordSinger</def>
+            </li>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>300</min>
+            <max>700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ArmoredMedieval</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>300</min>
+            <max>800</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Knight</defName>
+        <label>Crown knight</label>
+        <combatPower>100</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Noble_Child</li>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                    <li>ESCP_Backstory_Redguard_Ansei</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_SwordSinger</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>400</min>
+            <max>900</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ArmoredMedieval</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>400</min>
+            <max>1000</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Crowns_Noble</defName>
+        <label>Crown noble</label>
+        <combatPower>75</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Noble_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Crowns_Noble</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>200</min>
+            <max>600</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>300</min>
+            <max>700</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Forebears_Scout</defName>
+        <label>Forebear scout</label>
+        <defaultFactionDef>ESCP_Faction_Forebears</defaultFactionDef>
+        <combatPower>60</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Archer</li>
+                    <li>ESCP_Backstory_Forebears_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>140</min>
+            <max>350</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>SimpleGun</li>
+            <li>Bow</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialMilitary</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>150</min>
+            <max>400</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Trader</defName>
+        <label>Redguard trader</label>
+        <combatPower>35</combatPower>
+        <trader>true</trader>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_DesertMerchant</def>
+            </li>
+        </forcedTraits>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>150</min>
+            <max>350</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Quartermaster</defName>
+        <label>Redguard quartermaster</label>
+        <combatPower>55</combatPower>
+        <trader>true</trader>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li>
+                <def>ESCP_Trait_Redguard_AlikriEndurance</def>
+            </li>
+        </forcedTraits>
+        <weaponMoney>
+            <min>100</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialMilitary</li>
+        </apparelTags>
+        <apparelMoney>
+            <min>150</min>
+            <max>400</max>
+        </apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_RedguardkindBase">
+        <defName>ESCP_Pawnkind_Redguard_Settler</defName>
+        <label>Redguard settler</label>
+        <defaultFactionDef>ESCP_Faction_Redguard_Player</defaultFactionDef>
+        <combatPower>30</combatPower>
+        <isFighter>false</isFighter>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <apparelTags>
+            <li>MedievalBasic</li>
+        </apparelTags>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

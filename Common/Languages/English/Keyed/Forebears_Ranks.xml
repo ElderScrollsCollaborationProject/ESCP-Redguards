@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_Forebears>Sergeant:</ESCP_Rank_Mentor_Forebears>
+    <ESCP_Rank_Promote_Forebears>Raise in the Forebears</ESCP_Rank_Promote_Forebears>
+    <ESCP_Rank_Promoted_Text_Forebears>The Forebears' council has agreed. {0} now serves as {1}.</ESCP_Rank_Promoted_Text_Forebears>
+    <ESCP_Rank_Rally_Title_Forebears>{0} calls on Hammerfell</ESCP_Rank_Rally_Title_Forebears>
+    <ESCP_Rank_Rally_Text_Forebears>{0} calls on the cities of the Forebears, and every one of {1} on the field holds their ground.</ESCP_Rank_Rally_Text_Forebears>
+    <ESCP_Rank_InspectionComplete_Commended_Forebears>{0} checks {1}'s kit and finds it in good order.</ESCP_Rank_InspectionComplete_Commended_Forebears>
+    <ESCP_Rank_InspectionComplete_Reprimanded_Forebears>{0} checks {1}'s kit and docks their pay.</ESCP_Rank_InspectionComplete_Reprimanded_Forebears>
+    <ESCP_Rank_PunishmentAssigned_Forebears>{0} sends {1} on a night patrol of the docks.</ESCP_Rank_PunishmentAssigned_Forebears>
+
+</LanguageData>

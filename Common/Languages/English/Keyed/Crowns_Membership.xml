@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Crowns_Enlist_Letter_Title>Sworn to the Crowns</ESCP_Crowns_Enlist_Letter_Title>
+    <ESCP_Crowns_Enlist_Letter_Label>The colony is now sworn to the Crowns of Hammerfell. The old families will reward loyalty.</ESCP_Crowns_Enlist_Letter_Label>
+    <ESCP_Crowns_Enlist_Button_Label>Swear to the Crowns</ESCP_Crowns_Enlist_Button_Label>
+    <ESCP_Crowns_Enlist_Button_Desc>Join the Crowns, keepers of the old Yokudan ways.</ESCP_Crowns_Enlist_Button_Desc>
+    <ESCP_Crowns_Enlist_Requrements_Not_Satisfied>The Crowns do not trust you yet. Standing: {0}.</ESCP_Crowns_Enlist_Requrements_Not_Satisfied>
+    <ESCP_Crowns_Enlisted_To_Hostile_Faction>The Crowns will not accept the oath of their enemies.</ESCP_Crowns_Enlisted_To_Hostile_Faction>
+    <ESCP_Crowns_Enlisted_With_Key>Sworn to the Crowns</ESCP_Crowns_Enlisted_With_Key>
+    <ESCP_Crowns_Missions_Label>Crown business</ESCP_Crowns_Missions_Label>
+    <ESCP_Crowns_Missions_Desc>See what the Crown Prince wants done.</ESCP_Crowns_Missions_Desc>
+    <ESCP_Crowns_Menu_Missions_Desc>Business of the Crowns. Paid when finished.</ESCP_Crowns_Menu_Missions_Desc>
+    <ESCP_Crowns_Menu_Missions_Select_Quest>Select a job</ESCP_Crowns_Menu_Missions_Select_Quest>
+    <ESCP_Crowns_Menu_Missions_Start_Quest>Accept</ESCP_Crowns_Menu_Missions_Start_Quest>
+    <ESCP_Crowns_Menu_Missions_Collect_Bounty>Collect</ESCP_Crowns_Menu_Missions_Collect_Bounty>
+    <ESCP_Crowns_Provisions_Label>Draw supplies</ESCP_Crowns_Provisions_Label>
+    <ESCP_Crowns_Provisions_Desc>Dates, flatbread and water skins.</ESCP_Crowns_Provisions_Desc>
+    <ESCP_Crowns_Storage_Label>Crown storeroom</ESCP_Crowns_Storage_Label>
+    <ESCP_Crowns_Storage_Desc>Leave goods with the Crowns' stewards.</ESCP_Crowns_Storage_Desc>
+    <ESCP_Crowns_Resign_Menu_Text>Leave the Crowns? They will not take it well.</ESCP_Crowns_Resign_Menu_Text>
+    <ESCP_Crowns_Resign_Letter_Title>Left the Crowns</ESCP_Crowns_Resign_Letter_Title>
+    <ESCP_Crowns_Resign_Letter_Label>The colony has left the service of the Crowns.</ESCP_Crowns_Resign_Letter_Label>
+    <ESCP_Crowns_Resign_Button_Label>Leave the Crowns</ESCP_Crowns_Resign_Button_Label>
+    <ESCP_Crowns_Resign_Button_Desc>End your oath to the Crowns.</ESCP_Crowns_Resign_Button_Desc>
+    <ESCP_Crowns_Kick_Out_Letter_Title>Cast out by the Crowns</ESCP_Crowns_Kick_Out_Letter_Title>
+    <ESCP_Crowns_Kick_Out_Label_Title>The Crowns have turned the colony away.</ESCP_Crowns_Kick_Out_Label_Title>
+    <ESCP_Crowns_Salary_Label>Collect your stipend</ESCP_Crowns_Salary_Label>
+    <ESCP_Crowns_Salary_Desc>Coin from the Crowns' treasury.</ESCP_Crowns_Salary_Desc>
+    <ESCP_Crowns_Work_0_Label>Guard caravans in the Alik'r</ESCP_Crowns_Work_0_Label>
+    <ESCP_Crowns_Work_0_Desc>Escort caravans across the desert.</ESCP_Crowns_Work_0_Desc>
+    <ESCP_Crowns_Work_1_Label>Train with the sword-singers</ESCP_Crowns_Work_1_Label>
+    <ESCP_Crowns_Work_1_Desc>Learn the sword from an Ansei.</ESCP_Crowns_Work_1_Desc>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_Crowns>Sword-teacher:</ESCP_Rank_Mentor_Crowns>
+    <ESCP_Rank_Promote_Crowns>Honor Before the Crowns</ESCP_Rank_Promote_Crowns>
+    <ESCP_Rank_Promoted_Text_Crowns>The Crowns honor the old ways. {0} is now {1}.</ESCP_Rank_Promoted_Text_Crowns>
+    <ESCP_Rank_Rally_Title_Crowns>{0} sings the sword-song</ESCP_Rank_Rally_Title_Crowns>
+    <ESCP_Rank_Rally_Text_Crowns>{0} sings an old Yokudan war song, and every one of {1} on the field moves as one blade.</ESCP_Rank_Rally_Text_Crowns>
+    <ESCP_Rank_InspectionComplete_Commended_Crowns>{0} checks {1}'s blade. A sword-singer's blade, clean and true.</ESCP_Rank_InspectionComplete_Commended_Crowns>
+    <ESCP_Rank_InspectionComplete_Reprimanded_Crowns>{0} checks {1}'s blade and says Tall Papa would weep.</ESCP_Rank_InspectionComplete_Reprimanded_Crowns>
+    <ESCP_Rank_PunishmentAssigned_Crowns>{0} sends {1} to rake the courtyard sand.</ESCP_Rank_PunishmentAssigned_Crowns>
+
+</LanguageData>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Desert_Child</defName>
+        <identifier>ESCP_Backstory_Redguard_Desert_Child</identifier>
+        <slot>Childhood</slot>
+        <title>desert child</title>
+        <titleShort>Desert child</titleShort>
+        <description>[PAWN_nameDef] grew up at the edge of the Alik'r Desert, learning early that the land did not care whether you survived it. Lessons came in the form of heat and thirst and long silences between water sources, and the ones who did not learn them did not teach anyone else.</description>
+        <skillGains>
+            <Medicine>2</Medicine>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Sentinel_Child</defName>
+        <identifier>ESCP_Backstory_Redguard_Sentinel_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Sentinel dockside child</title>
+        <titleShort>Dock child</titleShort>
+        <description>[PAWN_nameDef] grew up on the waterfront of Sentinel, the great port city and heart of the Crowns. The docks were full of ships from every coast of Tamriel and merchants who had seen things that could not be unseen. None of them were boring, and [PAWN_nameDef] paid attention.</description>
+        <skillGains>
+            <Social>2</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Warrior_Child</defName>
+        <identifier>ESCP_Backstory_Redguard_Warrior_Child</identifier>
+        <slot>Childhood</slot>
+        <title>warrior's ward</title>
+        <titleShort>Warrior's ward</titleShort>
+        <description>[PAWN_nameDef] was raised in a household where the sword came before words and before much else. The adults in the house trained constantly, argued constantly, and made no distinction between the two. [PAWN_nameDef] grew up the same way, and considers it the best possible upbringing.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Merchant_Child</defName>
+        <identifier>ESCP_Backstory_Redguard_Merchant_Child</identifier>
+        <slot>Childhood</slot>
+        <title>merchant's apprentice</title>
+        <titleShort>Merchant child</titleShort>
+        <description>[PAWN_nameDef] grew up helping a family caravan cross the Alik'r and the coastal roads between Hammerfell's cities. The route was always different. The lessons were always the same: know your cargo, know your route, know your customer, and know when not to trust any of those three.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Animals>1</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Noble_Ward</defName>
+        <identifier>ESCP_Backstory_Redguard_Noble_Ward</identifier>
+        <slot>Childhood</slot>
+        <title>noble ward</title>
+        <titleShort>Noble ward</titleShort>
+        <description>[PAWN_nameDef] was raised in the household of a Crown noble, surrounded by old traditions, long genealogies, and the kind of education that included both court etiquette and daily sword practice, because in Hammerfell those are not considered separate disciplines.</description>
+        <skillGains>
+            <Social>2</Social>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Noble_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Sheik_Ward</defName>
+        <identifier>ESCP_Backstory_Redguard_Sheik_Ward</identifier>
+        <slot>Childhood</slot>
+        <title>sheik's ward</title>
+        <titleShort>Sheik's ward</titleShort>
+        <description>[PAWN_nameDef] grew up in a sheik's household, fostered to learn governance alongside the noble children and to forge the alliances that Hammerfell's political world required. The education was thorough. So were the obligations it created.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Noble_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Town_Worker</defName>
+        <identifier>ESCP_Backstory_Redguard_Town_Worker</identifier>
+        <slot>Adulthood</slot>
+        <title>Hammerfell town worker</title>
+        <titleShort>Town worker</titleShort>
+        <description>[PAWN_nameDef] worked the trades of one of Hammerfell's coastal towns: building, maintaining, hauling, and fixing the infrastructure that kept port cities running. The work was steady and the city was not boring.</description>
+        <skillGains>
+            <Construction>3</Construction>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Citizen</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Desert_Farmer</defName>
+        <identifier>ESCP_Backstory_Redguard_Desert_Farmer</identifier>
+        <slot>Adulthood</slot>
+        <title>desert farmer</title>
+        <titleShort>Desert farmer</titleShort>
+        <description>[PAWN_nameDef] farmed the oasis margins of the Alik'r, the narrow strips of viable land in a desert that did not want anyone growing things in it. The trick was knowing which crops could be coaxed and which could not, and never wasting effort on the second kind.</description>
+        <skillGains>
+            <Plants>4</Plants>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Citizen</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Port_Sailor</defName>
+        <identifier>ESCP_Backstory_Redguard_Port_Sailor</identifier>
+        <slot>Adulthood</slot>
+        <title>port sailor</title>
+        <titleShort>Sailor</titleShort>
+        <description>[PAWN_nameDef] crewed the merchant ships that ran between Sentinel, Rihad, and Taneth, and occasionally further east into waters that the maps didn't label carefully. The work required knowing how to tie, repair, and improvise, and how to fight when the cargo was worth stealing.</description>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Melee>2</Melee>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Citizen</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Garrison_Soldier</defName>
+        <identifier>ESCP_Backstory_Redguard_Garrison_Soldier</identifier>
+        <slot>Adulthood</slot>
+        <title>garrison soldier</title>
+        <titleShort>Garrison soldier</titleShort>
+        <description>[PAWN_nameDef] served in the garrison forces of a Hammerfell city, not the ornate chivalry of the Crowns, but the working soldiers who kept bandits off the roads and Aldmeri agents out of the ports. The job required constant alertness and an extremely high tolerance for tedium interrupted by violence.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Warrior</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Sworn_Blade</defName>
+        <identifier>ESCP_Backstory_Redguard_Sworn_Blade</identifier>
+        <slot>Adulthood</slot>
+        <title>sworn blade of a noble house</title>
+        <titleShort>Sworn blade</titleShort>
+        <description>[PAWN_nameDef] served as the personal sword of a Crown or Forebear noble: part honor guard, part bodyguard, part enforcer when the situation required it. The pay was good, the work was irregular, and the obligation to a household's honor was total.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Warrior</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Caravan_Guard</defName>
+        <identifier>ESCP_Backstory_Redguard_Caravan_Guard</identifier>
+        <slot>Adulthood</slot>
+        <title>Alik'r caravan guard</title>
+        <titleShort>Caravan guard</titleShort>
+        <description>[PAWN_nameDef] spent years guarding merchant caravans through the Alik'r, the worst route in Hammerfell for everything except bandits, who were extremely well-supplied. The experience made [PAWN_nameDef] exceptionally good at surviving the desert and extremely bad at being surprised.</description>
+        <skillGains>
+            <Melee>2</Melee>
+            <Shooting>2</Shooting>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Warrior</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Desert_Scout</defName>
+        <identifier>ESCP_Backstory_Redguard_Desert_Scout</identifier>
+        <slot>Adulthood</slot>
+        <title>Alik'r scout</title>
+        <titleShort>Desert scout</titleShort>
+        <description>[PAWN_nameDef] worked the desert routes as a scout, moving ahead of caravans and campaigns to find what was waiting and report back. The job required seeing without being seen and covering ground fast. The bow was the tool of choice because reloading a crossbow while retreating across open sand was worse than it sounds.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Archer</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Ship_Archer</defName>
+        <identifier>ESCP_Backstory_Redguard_Ship_Archer</identifier>
+        <slot>Adulthood</slot>
+        <title>ship's archer</title>
+        <titleShort>Ship archer</titleShort>
+        <description>[PAWN_nameDef] served as an anti-boarding archer on Hammerfell's merchant navy, one of the people whose job was to ensure the people trying to get onto the deck did not manage it. The work required accurate shooting from an unstable platform in high winds, which turned out to be excellent training for everything else.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Archer</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Desert_Trader</defName>
+        <identifier>ESCP_Backstory_Redguard_Desert_Trader</identifier>
+        <slot>Adulthood</slot>
+        <title>desert caravan trader</title>
+        <titleShort>Caravan trader</titleShort>
+        <description>[PAWN_nameDef] ran their own caravan between the cities of Hammerfell, the silk road of the desert, where the margins were thin and the bandits were consistent. The key skill was knowing exactly which customers needed what, and getting there before anyone else who also knew.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Merchant</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Port_Factor</defName>
+        <identifier>ESCP_Backstory_Redguard_Port_Factor</identifier>
+        <slot>Adulthood</slot>
+        <title>port factor</title>
+        <titleShort>Port factor</titleShort>
+        <description>[PAWN_nameDef] managed cargo for one of Sentinel's great trading houses: licensing, negotiating, arguing with harbormasters, and occasionally bribing them. The position required knowing everyone and having something on most of them.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Merchant</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Sword_Singer</defName>
+        <identifier>ESCP_Backstory_Redguard_Sword_Singer</identifier>
+        <slot>Adulthood</slot>
+        <title>sword-singer apprentice</title>
+        <titleShort>Sword-singer</titleShort>
+        <description>[PAWN_nameDef] trained in the old Ansei traditions, the blade discipline that the Yokudans brought across the ocean and never stopped refining. Most never reach the higher wa, the sword-forms that approach the legendary. [PAWN_nameDef] got further than most.</description>
+        <skillGains>
+            <Melee>5</Melee>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Ansei</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Redguard_Alikr_Warrior</defName>
+        <identifier>ESCP_Backstory_Redguard_Alikr_Warrior</identifier>
+        <slot>Adulthood</slot>
+        <title>Alik'r warrior</title>
+        <titleShort>Alik'r warrior</titleShort>
+        <description>[PAWN_nameDef] was an Alik'r warrior, one of the desert fighters who operate outside the cities and the courts, moving through the deep desert on operations that the nobles prefer not to discuss too loudly. The work was brutal. The training was worse. [PAWN_nameDef] came through both.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Redguard_Ansei</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Crowns_House_Knight</defName>
+        <identifier>ESCP_Backstory_Crowns_House_Knight</identifier>
+        <slot>Adulthood</slot>
+        <title>Crown house knight</title>
+        <titleShort>Crown knight</titleShort>
+        <description>[PAWN_nameDef] served as a knight in the household forces of a Crown noble family, the kind of service that came with ceremony, oaths, fine weapons, and the expectation of dying beautifully in defense of the family's honor if the occasion called for it. [PAWN_nameDef] has been prepared for that occasion since the day they took the oaths.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Crowns_Noble</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Crowns_Court_Advisor</defName>
+        <identifier>ESCP_Backstory_Crowns_Court_Advisor</identifier>
+        <slot>Adulthood</slot>
+        <title>Crown court advisor</title>
+        <titleShort>Court advisor</titleShort>
+        <description>[PAWN_nameDef] served in the courts of Hammerfell's Crown faction, advising nobles, managing correspondence, navigating disputes between houses, and occasionally navigating disputes between houses in ways that courts would prefer not to know about. The politics of the Crowns are complicated. [PAWN_nameDef] simplified them.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Crowns_Noble</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Forebears_City_Guard</defName>
+        <identifier>ESCP_Backstory_Forebears_City_Guard</identifier>
+        <slot>Adulthood</slot>
+        <title>Forebear city guard</title>
+        <titleShort>City guard</titleShort>
+        <description>[PAWN_nameDef] served in the city watch of a Forebear-controlled city, the organized militia that the Forebears preferred over the feudal household armies of the Crowns. More rules, more pay, and a clear chain of command. [PAWN_nameDef] appreciated the clarity.</description>
+        <skillGains>
+            <Melee>2</Melee>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Forebears_Citizen</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Forebears_Trade_Agent</defName>
+        <identifier>ESCP_Backstory_Forebears_Trade_Agent</identifier>
+        <slot>Adulthood</slot>
+        <title>Forebear trade agent</title>
+        <titleShort>Trade agent</titleShort>
+        <description>[PAWN_nameDef] worked for one of the Forebear merchant consortiums that operated between Hammerfell's ports and the wider Empire, negotiating contracts, managing relationships, and generally ensuring that money moved in the right direction. This is what the Forebears built instead of chivalry, and they would argue it works better.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Forebears_Citizen</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Crowns_Crown_Prince</defName>
+        <identifier>ESCP_Backstory_Crowns_Crown_Prince</identifier>
+        <slot>Adulthood</slot>
+        <title>Crown Prince of Hammerfell</title>
+        <titleShort>Crown Prince</titleShort>
+        <description>[PAWN_nameDef] rose to the Crown of Hammerfell: leader of the old nobility, champion of Yokudan tradition, and the one who held the desert against the Aldmeri Dominion when the Empire signed its treacherous peace and left Hammerfell to fight alone. The Redguards fought for two years after Concordat was signed. They won. [PAWN_nameDef] remembers exactly who helped and who did not.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Crowns_Crown_Prince</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Forebears_Tribune</defName>
+        <identifier>ESCP_Backstory_Forebears_Tribune</identifier>
+        <slot>Adulthood</slot>
+        <title>Tribune of the Forebears</title>
+        <titleShort>Tribune</titleShort>
+        <description>[PAWN_nameDef] leads the Forebear faction, the pragmatic, trade-minded wing of Hammerfell's politics that built the port cities and opened Hammerfell to the world. They are not naive about the costs of that decision. They have simply concluded that isolation costs more.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Forebears_Tribune</li>
+        </spawnCategories>
+        <possessions />
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+</Defs>

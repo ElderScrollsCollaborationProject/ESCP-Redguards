@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>ESCP_Quest_Redguard_Necromancer</defName>
+        <rootSelectionWeight>0.5</rootSelectionWeight>
+        <rootMinPoints>150</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Hammerfell: [necromancerName]</li>
+                <li>questName->Hammerfell: The Grave-Robber</li>
+                <li>questName->Hammerfell: Let the Dead Rest</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] of [askerFaction_name] has sent a rider with grim news. [necromancerName], who leads a band of [siteFaction_pawnsPlural] camped not far from the colony, has been digging up the dead and trying to raise them.\n\nTo a Redguard there are few crimes worse than disturbing the dead. [asker_nameDef] wants [necromancerName] killed and will pay well to hear it done. The rest of the camp is your concern.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li>ESCP_Faction_Crowns</li>
+                        <li>ESCP_Faction_Forebears</li>
+                    </factionDefs>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <factionToUse>$askerFaction</factionToUse>
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li><tag>BanditCamp</tag></li>
+                    </sitePartsTags>
+                    <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetFactionPawnKind">
+                    <faction>$siteFaction</faction>
+                    <storeAs>necromancerKind</storeAs>
+                </li>
+                <li Class="QuestNode_GeneratePawn">
+                    <kindDef>$necromancerKind</kindDef>
+                    <faction>$siteFaction</faction>
+                    <storeAs>necromancer</storeAs>
+                    <addToList>necromancers</addToList>
+                </li>
+                <li Class="QuestNode_RandomNode">
+                    <nodes>
+                        <li Class="QuestNode_Set">
+                            <name>necromancerName</name>
+                            <value>Bakhum the Pale</value>
+                        </li>
+                        <li Class="QuestNode_Set">
+                            <name>necromancerName</name>
+                            <value>Ilyas Grave-Hand</value>
+                        </li>
+                        <li Class="QuestNode_Set">
+                            <name>necromancerName</name>
+                            <value>Neramo the Bone-Wright</value>
+                        </li>
+                        <li Class="QuestNode_Set">
+                            <name>necromancerName</name>
+                            <value>Sahdina Ash-Eyes</value>
+                        </li>
+                        <li Class="QuestNode_Set">
+                            <name>necromancerName</name>
+                            <value>Tarrent Wormmouth</value>
+                        </li>
+                    </nodes>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_SetPawnName">
+                    <pawn>$necromancer</pawn>
+                    <name>$necromancerName</name>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_SpawnPawns">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <pawns>$necromancers</pawns>
+                    <mapParent>$site</mapParent>
+                </li>
+
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>necromancer.Killed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>[necromancerName] is dead</customLetterLabel>
+                                <customLetterText>Word of [necromancerName]'s death has reached [askerFaction_name]. [asker_nameDef] has sent payment, along with a request that the body be burned and not buried.</customLetterText>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.Destroyed</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(15,25)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <destroyOnCleanup>true</destroyOnCleanup>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

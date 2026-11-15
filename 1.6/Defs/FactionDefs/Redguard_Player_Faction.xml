@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>ESCP_Faction_Redguard_Player</defName>
+        <label>Hammerfell Settlement</label>
+        <description>A settlement founded by Redguard settlers from Hammerfell: warriors, merchants, and refugees who carry the old Yokudan ways to a new land. Governed by a Crown Prince who answers to the traditions of Hammerfell and to no empire.</description>
+        <isPlayer>true</isPlayer>
+        <techLevel>Medieval</techLevel>
+        <basicMemberKind>ESCP_Pawnkind_Redguard_Settler</basicMemberKind>
+        <pawnSingular>Redguard</pawnSingular>
+        <pawnsPlural>Redguards</pawnsPlural>
+        <leaderTitle>Crown Prince</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <colorSpectrum>
+            <li>(0.68, 0.48, 0.12)</li>
+        </colorSpectrum>
+        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+            <xenotypeChances>
+                <ESCP_Xenotype_Redguard>1</ESCP_Xenotype_Redguard>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedCultures>
+            <li>ESCP_Culture_Redguard</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                    <li>ESCP_Backstory_Redguard_Noble_Child</li>
+                    <li>ESCP_Backstory_Redguard_Citizen</li>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                    <li>ESCP_Backstory_Redguard_Ansei</li>
+                    <li>ESCP_Backstory_Redguard_Archer</li>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                    <li>ESCP_Backstory_Crowns_Noble</li>
+                    <li>ESCP_Backstory_Forebears_Citizen</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+
+        <modExtensions>
+            <li Class="ESCP_RaceTools.FactionProperties">
+                <factionTags>
+                    <li>ESCP_AllFlags</li>
+                </factionTags>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

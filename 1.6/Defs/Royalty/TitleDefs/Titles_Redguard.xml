@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Settler</defName>
+        <label>settler</label>
+        <description>A free person of Hammerfell, one of the many who came to this land by right of the Ra Gada. They hold no formal noble rank, but neither do they owe service to any lord they have not chosen.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Warrior</defName>
+        <label>warrior</label>
+        <description>A trained fighter of Hammerfell who has proven themselves in the field. Not yet a knight, but someone the nobles know by name and the enemy knows by reputation.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>100</seniority>
+        <favorCost>4</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Knight</defName>
+        <label>knight</label>
+        <description>A knight of Hammerfell: sworn to a noble house, trained in the finest sword traditions of the Alik'r, and honored accordingly. A knight fights at the front and is expected to die at the front if it comes to that, and they wouldn't have it any other way.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.5</commonality>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Lord</defName>
+        <label>lord</label>
+        <description>A lord of Hammerfell: holder of estates and title, commander of knights, and participant in the old councils that shaped Hammerfell's politics long before the Empire arrived. Their word has weight in the desert courts.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>600</seniority>
+        <favorCost>12</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.2</commonality>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Sheik</defName>
+        <label>sheik</label>
+        <description>A sheik, the highest rank of Hammerfell's regional nobility, holding authority over a city or a region of the desert. Sheiks answer only to the Crown Prince and to tradition, and they consider both binding.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>900</seniority>
+        <favorCost>18</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.1</commonality>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>6</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Redguard_Crown_Prince</defName>
+        <label>Crown Prince</label>
+        <description>The Crown Prince of Hammerfell: ruler of the old noble faction, champion of Yokudan tradition, and the one who held Hammerfell against the Aldmeri Dominion when the Empire would not. The title is ancient and the weight of it is felt.</description>
+        <tags><li>ESCP_Title_Redguard</li></tags>
+        <seniority>1200</seniority>
+        <favorCost>25</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>8</permitPointsAwarded>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+    </RoyalTitleDef>
+
+</Defs>

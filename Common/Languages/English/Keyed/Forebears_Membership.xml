@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Forebears_Enlist_Letter_Title>Joined the Forebears</ESCP_Forebears_Enlist_Letter_Title>
+    <ESCP_Forebears_Enlist_Letter_Label>The colony now works with the Forebears. The port families pay well for reliable help.</ESCP_Forebears_Enlist_Letter_Label>
+    <ESCP_Forebears_Enlist_Button_Label>Join the Forebears</ESCP_Forebears_Enlist_Button_Label>
+    <ESCP_Forebears_Enlist_Button_Desc>Join the Forebears, the merchant families of Hammerfell's ports.</ESCP_Forebears_Enlist_Button_Desc>
+    <ESCP_Forebears_Enlist_Requrements_Not_Satisfied>The Forebears are not convinced. Standing: {0}.</ESCP_Forebears_Enlist_Requrements_Not_Satisfied>
+    <ESCP_Forebears_Enlisted_To_Hostile_Faction>The Forebears do not do business with their enemies.</ESCP_Forebears_Enlisted_To_Hostile_Faction>
+    <ESCP_Forebears_Enlisted_With_Key>Works with the Forebears</ESCP_Forebears_Enlisted_With_Key>
+    <ESCP_Forebears_Missions_Label>Port business</ESCP_Forebears_Missions_Label>
+    <ESCP_Forebears_Missions_Desc>See what the merchant families need done.</ESCP_Forebears_Missions_Desc>
+    <ESCP_Forebears_Menu_Missions_Desc>Business from the Forebears' ports. Paid promptly.</ESCP_Forebears_Menu_Missions_Desc>
+    <ESCP_Forebears_Menu_Missions_Select_Quest>Select a job</ESCP_Forebears_Menu_Missions_Select_Quest>
+    <ESCP_Forebears_Menu_Missions_Start_Quest>Accept</ESCP_Forebears_Menu_Missions_Start_Quest>
+    <ESCP_Forebears_Menu_Missions_Collect_Bounty>Collect</ESCP_Forebears_Menu_Missions_Collect_Bounty>
+    <ESCP_Forebears_Provisions_Label>Draw supplies</ESCP_Forebears_Provisions_Label>
+    <ESCP_Forebears_Provisions_Desc>Imported goods from the Sentinel docks.</ESCP_Forebears_Provisions_Desc>
+    <ESCP_Forebears_Storage_Label>Port warehouse</ESCP_Forebears_Storage_Label>
+    <ESCP_Forebears_Storage_Desc>Store goods in a Forebears warehouse.</ESCP_Forebears_Storage_Desc>
+    <ESCP_Forebears_Resign_Menu_Text>Leave the Forebears? The merchant families will notice.</ESCP_Forebears_Resign_Menu_Text>
+    <ESCP_Forebears_Resign_Letter_Title>Left the Forebears</ESCP_Forebears_Resign_Letter_Title>
+    <ESCP_Forebears_Resign_Letter_Label>The colony no longer works with the Forebears.</ESCP_Forebears_Resign_Letter_Label>
+    <ESCP_Forebears_Resign_Button_Label>Leave the Forebears</ESCP_Forebears_Resign_Button_Label>
+    <ESCP_Forebears_Resign_Button_Desc>End your work with the Forebears.</ESCP_Forebears_Resign_Button_Desc>
+    <ESCP_Forebears_Kick_Out_Letter_Title>Dropped by the Forebears</ESCP_Forebears_Kick_Out_Letter_Title>
+    <ESCP_Forebears_Kick_Out_Label_Title>The Forebears have stopped doing business with the colony.</ESCP_Forebears_Kick_Out_Label_Title>
+    <ESCP_Forebears_Salary_Label>Collect your stipend</ESCP_Forebears_Salary_Label>
+    <ESCP_Forebears_Salary_Desc>A share of the port tolls.</ESCP_Forebears_Salary_Desc>
+    <ESCP_Forebears_Work_0_Label>Work the docks</ESCP_Forebears_Work_0_Label>
+    <ESCP_Forebears_Work_0_Desc>Load ships at the Sentinel docks.</ESCP_Forebears_Work_0_Desc>
+    <ESCP_Forebears_Work_1_Label>Bargain with the traders</ESCP_Forebears_Work_1_Label>
+    <ESCP_Forebears_Work_1_Desc>Learn how the Forebears trade.</ESCP_Forebears_Work_1_Desc>
+
+</LanguageData>

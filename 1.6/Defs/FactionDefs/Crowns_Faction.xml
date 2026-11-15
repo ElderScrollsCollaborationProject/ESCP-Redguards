@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Crowns</defName>
+        <label>Crowns of Hammerfell</label>
+        <description>The Crowns are Hammerfell's conservative nobility, descendants of the Ra Gada warrior-waves who first crossed the ocean from Yokuda and carved Hammerfell from the land by right of conquest. They hold fast to the old Yokudan traditions: language, gods, customs, and the belief that Hammerfell belongs to the Redguards before it belongs to any empire. Where the Forebears opened their ports to the Empire, the Crowns shut theirs. They have never forgiven it.</description>
+        <pawnSingular>Crown warrior</pawnSingular>
+        <pawnsPlural>Crown warriors</pawnsPlural>
+        <leaderTitle>Crown Prince</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>Crowns of Hammerfell</fixedName>
+        <categoryTag>Outlander</categoryTag>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <settlementGenerationWeight>0.3</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <colorSpectrum>
+            <li>(0.68, 0.48, 0.12)</li>
+        </colorSpectrum>
+        <allowedCultures>
+            <li>ESCP_Culture_Redguard</li>
+        </allowedCultures>
+        <royalTitleTags>
+            <li>ESCP_Title_Redguard</li>
+        </royalTitleTags>
+        <royalFavorLabel>Desert Honor</royalFavorLabel>
+
+        <fixedIdeo MayRequire="Ludeon.RimWorld.Ideology">true</fixedIdeo>
+        <ideoName MayRequire="Ludeon.RimWorld.Ideology">Yokudan Ways</ideoName>
+        <ideoDescription MayRequire="Ludeon.RimWorld.Ideology">We carry the ancient ways of Yokuda across every sea and every desert. Our gods walked before us: Tall Papa who gave us endurance, Tu'whacca who guides the dead to the Far Shores, Leki whose blade is perfect. We do not become something else to survive. We remain what we are, and we make our way through a world that does not deserve us.</ideoDescription>
+        <deityPresets MayRequire="Ludeon.RimWorld.Ideology">
+            <li>
+                <nameType><name>Ruptga</name><type>God of Endurance and Perseverance</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Tu'whacca</name><type>God of the Far Shores and Souls</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Leki</name><type>Goddess of the Straight and Sure Blade</type></nameType>
+            </li>
+            <li>
+                <nameType><name>HoonDing</name><type>The Make Way God</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Morwha</name><type>Goddess of Fertility and Love</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Zeht</name><type>God of Agriculture and the Land</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Onsi</name><type>God of Knives and Warriors</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Satakal</name><type>The World-Eating Serpent</type></nameType>
+                <iconPath>UI/Deities/ESCP_DeitySatakal</iconPath>
+            </li>
+        </deityPresets>
+        <styles MayRequire="Ludeon.RimWorld.Ideology">
+            <li>ESCP_Style_Redguard</li>
+        </styles>
+        <forcedMemes MayRequire="Ludeon.RimWorld.Ideology">
+            <li>Structure_Ideological</li>
+            <li>ESCP_Meme_YokudanWay</li>
+        </forcedMemes>
+        <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">true</requiredPreceptsOnly>
+
+        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+            <xenotypeChances>
+                <ESCP_Xenotype_Redguard>1</ESCP_Xenotype_Redguard>
+                <Baseliner>0.05</Baseliner>
+                <Hussar>0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                    <li>ESCP_Backstory_Redguard_Noble_Child</li>
+                    <li>ESCP_Backstory_Redguard_Citizen</li>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                    <li>ESCP_Backstory_Redguard_Ansei</li>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                    <li>ESCP_Backstory_Crowns_Noble</li>
+                </categories>
+                <commonality>0.95</commonality>
+            </li>
+        </backstoryFilters>
+
+        <caravanTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+            <li>ESCP_Caravan_Redguard_Quartermaster</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-10~55</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Warrior>12</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Archer>6</ESCP_Pawnkind_Redguard_Archer>
+                    <ESCP_Pawnkind_Redguard_Alikr>4</ESCP_Pawnkind_Redguard_Alikr>
+                    <ESCP_Pawnkind_Redguard_Knight>3</ESCP_Pawnkind_Redguard_Knight>
+                    <ESCP_Pawnkind_Crowns_Noble>1</ESCP_Pawnkind_Crowns_Noble>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Citizen>20</ESCP_Pawnkind_Redguard_Citizen>
+                    <ESCP_Pawnkind_Redguard_Merchant>10</ESCP_Pawnkind_Redguard_Merchant>
+                    <ESCP_Pawnkind_Crowns_Noble>3</ESCP_Pawnkind_Crowns_Noble>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ESCP_Pawnkind_Redguard_Trader>1</ESCP_Pawnkind_Redguard_Trader>
+                    <ESCP_Pawnkind_Redguard_Quartermaster>1</ESCP_Pawnkind_Redguard_Quartermaster>
+                </traders>
+                <carriers>
+                    <Dromedary>6</Dromedary>
+                    <Muffalo>3</Muffalo>
+                    <Alpaca>2</Alpaca>
+                </carriers>
+                <guards>
+                    <ESCP_Pawnkind_Redguard_Warrior>10</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Alikr>4</ESCP_Pawnkind_Redguard_Alikr>
+                    <ESCP_Pawnkind_Redguard_Knight>2</ESCP_Pawnkind_Redguard_Knight>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Citizen>8</ESCP_Pawnkind_Redguard_Citizen>
+                    <ESCP_Pawnkind_Redguard_Warrior>12</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Archer>8</ESCP_Pawnkind_Redguard_Archer>
+                    <ESCP_Pawnkind_Redguard_Alikr>4</ESCP_Pawnkind_Redguard_Alikr>
+                    <ESCP_Pawnkind_Redguard_Knight>5</ESCP_Pawnkind_Redguard_Knight>
+                    <ESCP_Pawnkind_Crowns_Noble>2</ESCP_Pawnkind_Crowns_Noble>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+                <li>(100, 20)</li>
+                <li>(1000, 75)</li>
+                <li>(3000, 100)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP_RaceTools.FactionProperties">
+                <factionTags>
+                    <li>ESCP_Crowns</li>
+                    <li>ESCP_AllFlags</li>
+                </factionTags>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Crowns of Hammerfell</newLabel>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+
+    </FactionDef>
+
+</Defs>

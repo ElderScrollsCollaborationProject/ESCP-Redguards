@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Redguard_SwordSinger</defName>
+        <label>sword-singer's discipline</label>
+        <description>This person carries the philosophy of the Ansei, the ancient Redguard sword-singers who mastered the blade so completely they could shape it from pure will alone. It is not about strength. It is about becoming one still point in a moving world, about patience until the perfect moment, and then moving faster than thought.</description>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>sword-singer's discipline</label>
+                <description>This person carries the philosophy of the Ansei, the ancient Redguard sword-singers. Patient, precise, and absolutely lethal at close range.</description>
+                <degree>0</degree>
+                <statOffsets>
+                    <MeleeHitChance>0.08</MeleeHitChance>
+                    <MeleeDodgeChance>0.06</MeleeDodgeChance>
+                    <PainShockThreshold>0.06</PainShockThreshold>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Redguard_AlikriEndurance</defName>
+        <label>Alik'r endurance</label>
+        <description>This person has been shaped by the Alik'r Desert, or by the same cultural memory of it that Hammerfell's warriors carry even when they've never set foot in the sand. They do not stop easily. Heat, pain, and exhaustion register differently for them than for people who grew up somewhere easier.</description>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Alik'r endurance</label>
+                <description>Shaped by the Alik'r Desert's harsh lessons. Resists heat and pain beyond normal limits.</description>
+                <degree>0</degree>
+                <statOffsets>
+                    <PainShockThreshold>0.10</PainShockThreshold>
+                    <MoveSpeed>0.05</MoveSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Redguard_DesertMerchant</defName>
+        <label>desert merchant</label>
+        <description>This person has the instinct of Hammerfell's great trading class, the sailors and caravan-masters who turned Sentinel into one of Tamriel's busiest ports. They understand value, they read people quickly, and they never agree to the first price offered.</description>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>desert merchant</label>
+                <description>Steeped in Hammerfell's trading tradition. A natural haggler and social operator.</description>
+                <degree>0</degree>
+                <statOffsets>
+                    <TradePriceImprovement>0.12</TradePriceImprovement>
+                    <NegotiationAbility>0.10</NegotiationAbility>
+                    <SocialImpact>0.10</SocialImpact>
+                </statOffsets>
+                <skillGains>
+                    <Social>3</Social>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

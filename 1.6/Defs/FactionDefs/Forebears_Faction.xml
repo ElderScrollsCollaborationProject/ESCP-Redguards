@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Forebears</defName>
+        <label>Forebears of Hammerfell</label>
+        <description>The Forebears are Hammerfell's pragmatic merchant class, the descendants of the common soldiers and sailors who followed the Ra Gada wave, without the high birth the Crowns prize so highly. They opened Hammerfell's ports to the Empire, built the great trading cities of Gilane and Taneth, and have never stopped counting the economic argument against tradition. They still honor the Yokudan gods. They still fight when they need to. They simply do not think fighting is always the most useful response to a situation.</description>
+        <pawnSingular>Forebear</pawnSingular>
+        <pawnsPlural>Forebears</pawnsPlural>
+        <leaderTitle>Tribune</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>Forebears of Hammerfell</fixedName>
+        <categoryTag>Outlander</categoryTag>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <settlementGenerationWeight>0.3</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <colorSpectrum>
+            <li>(0.30, 0.55, 0.65)</li>
+        </colorSpectrum>
+        <allowedCultures>
+            <li>ESCP_Culture_Redguard</li>
+        </allowedCultures>
+        <royalTitleTags>
+            <li>ESCP_Title_Redguard</li>
+        </royalTitleTags>
+        <royalFavorLabel>Desert Honor</royalFavorLabel>
+
+        <fixedIdeo MayRequire="Ludeon.RimWorld.Ideology">true</fixedIdeo>
+        <ideoName MayRequire="Ludeon.RimWorld.Ideology">Yokudan Ways</ideoName>
+        <ideoDescription MayRequire="Ludeon.RimWorld.Ideology">We carry the Yokudan faith in our hearts but we are not blind to the world around us. Tall Papa gave us endurance so we could outlast hardship, not so we could refuse every change that comes. We trade with who we must, we ally where it serves Hammerfell, and we honor our gods by surviving and prospering rather than dying in glorious isolation.</ideoDescription>
+        <deityPresets MayRequire="Ludeon.RimWorld.Ideology">
+            <li>
+                <nameType><name>Ruptga</name><type>God of Endurance and Perseverance</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Tu'whacca</name><type>God of the Far Shores and Souls</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Leki</name><type>Goddess of the Straight and Sure Blade</type></nameType>
+            </li>
+            <li>
+                <nameType><name>HoonDing</name><type>The Make Way God</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Morwha</name><type>Goddess of Fertility and Love</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Zeht</name><type>God of Agriculture and the Land</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Onsi</name><type>God of Knives and Warriors</type></nameType>
+            </li>
+            <li>
+                <nameType><name>Satakal</name><type>The World-Eating Serpent</type></nameType>
+                <iconPath>UI/Deities/ESCP_DeitySatakal</iconPath>
+            </li>
+        </deityPresets>
+        <styles MayRequire="Ludeon.RimWorld.Ideology">
+            <li>ESCP_Style_Redguard</li>
+        </styles>
+        <forcedMemes MayRequire="Ludeon.RimWorld.Ideology">
+            <li>Structure_Ideological</li>
+            <li>ESCP_Meme_YokudanWay</li>
+        </forcedMemes>
+        <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">true</requiredPreceptsOnly>
+
+        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+            <xenotypeChances>
+                <ESCP_Xenotype_Redguard>1</ESCP_Xenotype_Redguard>
+                <Baseliner>0.05</Baseliner>
+                <Hussar>0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                    <li>ESCP_Backstory_Redguard_Citizen</li>
+                    <li>ESCP_Backstory_Redguard_Warrior</li>
+                    <li>ESCP_Backstory_Redguard_Archer</li>
+                    <li>ESCP_Backstory_Redguard_Merchant</li>
+                    <li>ESCP_Backstory_Forebears_Citizen</li>
+                </categories>
+                <commonality>0.95</commonality>
+            </li>
+        </backstoryFilters>
+
+        <caravanTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+            <li>ESCP_Caravan_Redguard_Quartermaster</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>ESCP_Caravan_Redguard_Trader</li>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-10~55</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Warrior>10</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Archer>8</ESCP_Pawnkind_Redguard_Archer>
+                    <ESCP_Pawnkind_Redguard_Alikr>4</ESCP_Pawnkind_Redguard_Alikr>
+                    <ESCP_Pawnkind_Forebears_Scout>6</ESCP_Pawnkind_Forebears_Scout>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Citizen>20</ESCP_Pawnkind_Redguard_Citizen>
+                    <ESCP_Pawnkind_Redguard_Merchant>15</ESCP_Pawnkind_Redguard_Merchant>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ESCP_Pawnkind_Redguard_Trader>1</ESCP_Pawnkind_Redguard_Trader>
+                    <ESCP_Pawnkind_Redguard_Quartermaster>1</ESCP_Pawnkind_Redguard_Quartermaster>
+                </traders>
+                <carriers>
+                    <Dromedary>8</Dromedary>
+                    <Muffalo>4</Muffalo>
+                </carriers>
+                <guards>
+                    <ESCP_Pawnkind_Redguard_Warrior>8</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Archer>6</ESCP_Pawnkind_Redguard_Archer>
+                    <ESCP_Pawnkind_Forebears_Scout>4</ESCP_Pawnkind_Forebears_Scout>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Redguard_Citizen>10</ESCP_Pawnkind_Redguard_Citizen>
+                    <ESCP_Pawnkind_Redguard_Warrior>10</ESCP_Pawnkind_Redguard_Warrior>
+                    <ESCP_Pawnkind_Redguard_Archer>10</ESCP_Pawnkind_Redguard_Archer>
+                    <ESCP_Pawnkind_Redguard_Alikr>4</ESCP_Pawnkind_Redguard_Alikr>
+                    <ESCP_Pawnkind_Forebears_Scout>5</ESCP_Pawnkind_Forebears_Scout>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+                <li>(100, 20)</li>
+                <li>(1000, 75)</li>
+                <li>(3000, 100)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP_RaceTools.FactionProperties">
+                <factionTags>
+                    <li>ESCP_Forebears</li>
+                    <li>ESCP_AllFlags</li>
+                </factionTags>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Forebears of Hammerfell</newLabel>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+
+    </FactionDef>
+
+</Defs>

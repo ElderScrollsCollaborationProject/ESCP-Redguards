@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_CrownPrince</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Crown_Prince</pawnKind>
+        <faction>ESCP_Faction_Crowns</faction>
+        <eras>
+            <li>2</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Redguard</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Fahara'jad</firstName>
+                <lastName>al-Sentinel</lastName>
+                <nickname>Crown Prince of Hammerfell</nickname>
+                <gender>Male</gender>
+                <age>52</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>Goatee</beardDef>
+                <skinColorOverride>(95, 70, 50)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_ForebearsTribune</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Forebears_Tribune</pawnKind>
+        <faction>ESCP_Faction_Forebears</faction>
+        <eras>
+            <li>3</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Redguard</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Lhotun</firstName>
+                <lastName>al-Taneth</lastName>
+                <nickname>Tribune of the Forebears</nickname>
+                <gender>Male</gender>
+                <age>44</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 15)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(85, 62, 44)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+</Defs>

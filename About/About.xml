@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <packageId>Rick.ESCP.Redguards</packageId>
+    <name>ESCP - Redguards</name>
+    <author>Rick</author>
+    <description>The Elder Scrolls Collaboration Project Presents: Redguards, an Elder Scrolls xenotype and faction mod featuring the proud warriors and sailors of Hammerfell.</description>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Rick.ESCP.Core.Tools</packageId>
+            <displayName>ESCP - Tools</displayName>
+            <downloadUrl>https://github.com/ElderScrollsCollaborationProject</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Rick.ESCP.Core.Tools</li>
+    </loadAfter>
+
+</ModMetaData>

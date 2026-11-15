@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Redguard_Warrior_Heritage</defName>
+        <label>warrior heritage</label>
+        <description>Carriers descend from the Yokudans, a people who crossed an entire ocean and then spent centuries conquering a new continent at sword-point. Every generation since has been trained to fight almost before they could walk. This is not a matter of culture alone; centuries of martial selection have left something in the blood. They are faster to strike, more precise under pressure, and they carry pain the way a sword carries weight, as something to use, not something to stop for.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Discipline</iconPath>
+        <displayCategory>Violence</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statOffsets>
+            <MeleeHitChance>0.07</MeleeHitChance>
+            <ShootingAccuracyPawn>0.04</ShootingAccuracyPawn>
+            <MoveSpeed>0.05</MoveSpeed>
+        </statOffsets>
+        <abilities>
+            <li>ESCP_Ability_Redguard_AdrenalineRush</li>
+        </abilities>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Redguard_Desert_Endurance</defName>
+        <label>desert endurance</label>
+        <description>Carriers are shaped by the Alik'r, the great desert of Hammerfell that has tested their people for generations. The heat that kills others slows them less. The pain that stops others does not stop them. They push through exhaustion that would drop anyone who hadn't grown up learning that the desert doesn't care whether you keep going or not.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Bearing</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <PainShockThreshold>0.12</PainShockThreshold>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Redguard_Alikr_Spirit</defName>
+        <label>Alik'r spirit</label>
+        <description>Carriers carry the merchant and warrior traditions of Hammerfell in equal measure, the same cultural inheritance that produced both Ansei sword-singers and the traders who built Sentinel into one of Tamriel's busiest ports. They read people as readily as they read terrain, haggle as effectively as they fight, and command respect in both the market and the battlefield through the same combination of confidence and competence.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Bearing</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>101</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <TradePriceImprovement>0.08</TradePriceImprovement>
+            <SocialImpact>0.08</SocialImpact>
+        </statOffsets>
+    </GeneDef>
+
+</Defs>

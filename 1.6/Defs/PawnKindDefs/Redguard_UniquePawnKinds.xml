@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_Redguard_UniqueCharacterBase" ParentName="ESCP_RedguardkindBase" Abstract="true">
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <combatPower>200</combatPower>
+        <apparelMoney>9999</apparelMoney>
+        <gearHealthRange>10</gearHealthRange>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <weaponMoney>9999</weaponMoney>
+        <maxGenerationAge>99</maxGenerationAge>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Redguard_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Crown_Prince</defName>
+        <label>Crown Prince of Hammerfell</label>
+        <defaultFactionDef>ESCP_Faction_Crowns</defaultFactionDef>
+        <factionLeader>true</factionLeader>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Noble_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Crowns_Crown_Prince</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li><def>ESCP_Trait_Redguard_SwordSinger</def></li>
+            <li><def>ESCP_Trait_Redguard_AlikriEndurance</def></li>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Redguard_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Forebears_Tribune</defName>
+        <label>Tribune of the Forebears</label>
+        <defaultFactionDef>ESCP_Faction_Forebears</defaultFactionDef>
+        <factionLeader>true</factionLeader>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Redguard_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Forebears_Tribune</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <li><def>ESCP_Trait_Redguard_DesertMerchant</def></li>
+            <li><def>ESCP_Trait_Redguard_AlikriEndurance</def></li>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Enlist.FactionEnlistOptionsDef>
+        <defName>ESCP_Enlistment_Crowns</defName>
+        <label>Crowns of Hammerfell</label>
+        <secretMembership>false</secretMembership>
+        <minGoodwillRequrementToEnlist>20</minGoodwillRequrementToEnlist>
+        <enlistGoodwillGain>5</enlistGoodwillGain>
+        <minGoodwillUponEnlist>50</minGoodwillUponEnlist>
+        <currencyDef>ESCP_Currency_Septims</currencyDef>
+
+        <enlistLetterTitleKey>ESCP_Crowns_Enlist_Letter_Title</enlistLetterTitleKey>
+        <enlistLetterLabelKey>ESCP_Crowns_Enlist_Letter_Label</enlistLetterLabelKey>
+        <enlistButtonLabelKey>ESCP_Crowns_Enlist_Button_Label</enlistButtonLabelKey>
+        <enlistButtonDescKey>ESCP_Crowns_Enlist_Button_Desc</enlistButtonDescKey>
+        <enlistRequrementsNotSatisfiedKey>ESCP_Crowns_Enlist_Requrements_Not_Satisfied</enlistRequrementsNotSatisfiedKey>
+        <enlistedToHostileFactionKey>ESCP_Crowns_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
+        <enlistButtonIconTexPath>UI/Icons/RoyalFavor</enlistButtonIconTexPath>
+        <enlistedWithKey>ESCP_Crowns_Enlisted_With_Key</enlistedWithKey>
+
+        <missionsAreEnabled>true</missionsAreEnabled>
+        <missionQuestPrefixes>
+            <li>ESCP_Quest_Redguard_</li>
+            <li>ESCP_Quest_Hold_</li>
+            <li>OpportunitySite_BanditCamp</li>
+            <li>OpportunitySite_ItemStash</li>
+            <li>OpportunitySite_PrisonerWillingToJoin</li>
+        </missionQuestPrefixes>
+        <missionsLabelKey>ESCP_Crowns_Missions_Label</missionsLabelKey>
+        <missionsDescKey>ESCP_Crowns_Missions_Desc</missionsDescKey>
+        <missionsButtonIconTexPath>UI/Commands/Inspect</missionsButtonIconTexPath>
+        <missionsBackgroundMenuTexPath>UI/Commands/Inspect</missionsBackgroundMenuTexPath>
+        <missionsMenuDescriptionKey>ESCP_Crowns_Menu_Missions_Desc</missionsMenuDescriptionKey>
+        <missionsMenuSelectQuestKey>ESCP_Crowns_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
+        <missionsMenuStartQuestKey>ESCP_Crowns_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
+        <missionsBountyRewardRange>50~130</missionsBountyRewardRange>
+        <missionsMenuCollectBountyKey>ESCP_Crowns_Menu_Missions_Collect_Bounty</missionsMenuCollectBountyKey>
+
+        <salaryIsEnabled>true</salaryIsEnabled>
+        <salaryDef>ESCP_Currency_Septims</salaryDef>
+        <salaryLabelKey>ESCP_Crowns_Salary_Label</salaryLabelKey>
+        <salaryDescKey>ESCP_Crowns_Salary_Desc</salaryDescKey>
+        <salaryButtonIconTexPath>Things/Item/Currencies/ESCP_Septim/ESCP_Septim_c</salaryButtonIconTexPath>
+        <salaryRange>150~320</salaryRange>
+        <salaryPeriodDays>14</salaryPeriodDays>
+
+        <provisionOptions>
+            <li>
+                <provisionsLabelKey>ESCP_Crowns_Provisions_Label</provisionsLabelKey>
+                <provisionsDescKey>ESCP_Crowns_Provisions_Desc</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/Icons/ThingCategories/FoodMeals</provisionsButtonIconTexPath>
+                <provisions>
+                    <li>
+                        <thing>Pemmican</thing>
+                        <amountRange>20~30</amountRange>
+                    </li>
+                </provisions>
+                <provisionsRestockInDays>10</provisionsRestockInDays>
+            </li>
+        </provisionOptions>
+
+        <storageIsEnabled>true</storageIsEnabled>
+        <storageLabelKey>ESCP_Crowns_Storage_Label</storageLabelKey>
+        <storageDescKey>ESCP_Crowns_Storage_Desc</storageDescKey>
+        <storageButtonIconTexPath>UI/Icons/ThingCategories/Manufactured</storageButtonIconTexPath>
+
+        <recreationGainPerTick>0.0001</recreationGainPerTick>
+        <workOptions>
+            <li>
+                <workLabelKey>ESCP_Crowns_Work_0_Label</workLabelKey>
+                <workDescKey>ESCP_Crowns_Work_0_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Icons/WorkMode/Work</workButtonIconTexPath>
+                <additionalRestFall>0.2</additionalRestFall>
+                <silverGainPerHour>9</silverGainPerHour>
+            </li>
+            <li>
+                <workLabelKey>ESCP_Crowns_Work_1_Label</workLabelKey>
+                <workDescKey>ESCP_Crowns_Work_1_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Icons/Learning/Lessontaking</workButtonIconTexPath>
+                <additionalRestFall>0.2</additionalRestFall>
+                <experienceGainsPerHour>
+                    <Melee>800</Melee>
+                </experienceGainsPerHour>
+            </li>
+        </workOptions>
+
+        <turnInIsEnabled>false</turnInIsEnabled>
+        <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
+        <reinforcementsAreEnabled>false</reinforcementsAreEnabled>
+
+        <resignGoodwillGain>-30</resignGoodwillGain>
+        <resignMenuTextKey>ESCP_Crowns_Resign_Menu_Text</resignMenuTextKey>
+        <resignLetterTitleKey>ESCP_Crowns_Resign_Letter_Title</resignLetterTitleKey>
+        <resignLetterLabelKey>ESCP_Crowns_Resign_Letter_Label</resignLetterLabelKey>
+        <resignButtonLabelKey>ESCP_Crowns_Resign_Button_Label</resignButtonLabelKey>
+        <resignButtonDescKey>ESCP_Crowns_Resign_Button_Desc</resignButtonDescKey>
+        <resignButtonIconTexPath>UI/Icons/Trainables/Release</resignButtonIconTexPath>
+
+        <kickOutLetterTitleKey>ESCP_Crowns_Kick_Out_Letter_Title</kickOutLetterTitleKey>
+        <kickOutLetterLabelKey>ESCP_Crowns_Kick_Out_Label_Title</kickOutLetterLabelKey>
+    </ESCP.Enlist.FactionEnlistOptionsDef>
+
+</Defs>
