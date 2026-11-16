@@ -189,6 +189,31 @@
                     <li>RandomDrop</li>
                 </arrivalModes>
             </li>
+            <li Class="ESCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>ESCP_Enlistment_Forebears</li>
+                </enlistOptionsDefs>
+            </li>
+            <li Class="ESCP.Ranks.FactionExtension_RankTracks">
+                <rankTracks>
+                    <li>ESCP_RankTrack_Forebears</li>
+                </rankTracks>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_NamedSettlement">
+                <settlementNames>
+                    <li>Dragonstar</li>
+                    <li>Elinhir</li>
+                    <li>Skaven</li>
+                </settlementNames>
+                <preferredHilliness />
+                <allowedBiomes>
+                    <li>AridShrubland</li>
+                    <li>Desert</li>
+                </allowedBiomes>
+                <clustered>true</clustered>
+                <nearFaction>ESCP_Faction_Crowns</nearFaction>
+            </li>
+            <li Class="ESCP.Core.Crime.FactionExtension_Law" />
         </modExtensions>
 
     </FactionDef>
