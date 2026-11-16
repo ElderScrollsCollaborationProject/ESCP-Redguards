@@ -46,7 +46,7 @@
         <degreeDatas>
             <li>
                 <label>desert merchant</label>
-                <description>Steeped in Hammerfell's trading tradition. A natural haggler and social operator.</description>
+                <description>Raised on Hammerfell's trade roads. A born haggler who can talk a merchant down to cost.</description>
                 <degree>0</degree>
                 <statOffsets>
                     <TradePriceImprovement>0.12</TradePriceImprovement>

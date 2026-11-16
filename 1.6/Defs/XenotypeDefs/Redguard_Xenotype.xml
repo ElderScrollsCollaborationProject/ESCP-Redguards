@@ -5,7 +5,7 @@
         <defName>ESCP_Xenotype_Redguard</defName>
         <label>Redguard</label>
         <iconPath>UI/Icons/Xenotypes/Hussar</iconPath>
-        <description>The proud warriors and desert-hardened people of Hammerfell, descendants of the Yokudans who crossed the Eltheric Ocean to escape a world consumed by Satakal. Redguards are widely considered the finest warriors in all of Tamriel, combining ferocious melee skill with the endurance bred from generations in the Alik'r. Their ancient tradition of the sword-singers, the Ansei, elevated the blade arts into something approaching the divine. They are also tireless traders, sailing from Sentinel to every major port on the continent, and they guard their independence with the same sword-edge they use for everything else.</description>
+        <description>The proud warriors and desert-hardened people of Hammerfell, descendants of the Yokudans who crossed the Eltheric Ocean to escape a world consumed by Satakal. Redguards are widely considered the finest warriors in all of Tamriel, combining ferocious melee skill with the endurance bred from generations in the Alik'r. Their ancient tradition of the sword-singers, the Ansei, made swordplay a form of worship. They are also tireless traders, sailing from Sentinel to every major port on the continent, and they guard their independence with the same sword-edge they use for everything else.</description>
         <descriptionShort>Desert-forged warriors of Hammerfell: swift, precise, heat-hardened, and proud of their Yokudan heritage.</descriptionShort>
         <inheritable>true</inheritable>
         <genes>
